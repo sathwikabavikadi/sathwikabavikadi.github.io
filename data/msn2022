@@ -1,0 +1,8 @@
+@inproceedings{liu2022accelerating,
+  title={Accelerating Adversarial Attack using Process-in-Memory Architecture},
+  author={Liu, Shiyi and Bavikadi, Sathwika and Sen, Tanmoy and Shen, Haiying and Sutradhar, Purab Ranjan and Ganguly, Amlan and Dinakarrao, Sai Manoj Pudukotai and Smith, Brian L},
+  booktitle={2022 18th International Conference on Mobility, Sensing and Networking (MSN)},
+  pages={325--330},
+  year={2022},
+  organization={IEEE Computer Society}
+}
