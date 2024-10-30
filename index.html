@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	  
    <!-- <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> -->
 	  <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -23,6 +23,14 @@
  <!-- End Google Analytics -->
 	  
   <title>Sathwika Bavikadi</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <style>
+    .cursive-font {
+      font-family: 'Dancing Script', cursive;
+      font-size: 24px; /* Adjust size as needed */
+    }
+  </style>
  
   <meta name="author" content="Sathwika Bavikadi">
  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
@@ -302,11 +310,13 @@ Before joining GMU, I worked as a PD Baseband Developer at Ericsson, Lund, Swede
 	      
 	      </p>
             </td>
-            <td style="padding:2.5%;width:40%;max-width:40%">
+            <td style="padding:2%;width:45%;max-width:45%">
              <img style="width:100%;max-width:100%" alt="profile photo" src="images/Sathwika Bavikadi-HS.jpg" class="hoverZoomLink"></a>
 
 	<div id="address">
-	    Assistant Professor, Department of Computer Engineering, Rochester Institute of Technology
+	<p class="cursive-font"> Assistant Professor,</p>
+	<p class="cursive-font"> Department of Computer Engineering,</p>
+	<p class="cursive-font"> Rochester Institute of Technology</p>
 	</div>
 
       <div class="social-icons">
@@ -904,7 +914,7 @@ Purab Ranjan Sutradhar, <strong>Sathwika Bavikadi</strong>, Mark Connolly, Savan
 -->
 
 				
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+<!--<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
 	       <tr>
 		<td>
 		<br>
@@ -915,20 +925,25 @@ Purab Ranjan Sutradhar, <strong>Sathwika Bavikadi</strong>, Mark Connolly, Savan
               </p>
         </td>
       </tr>
-      </table>
+      </table> -->
 
 <footer style="text-align: center; margin-top: 20px; padding: 10px;">
-    <p>&copy; <span id="year"></span> Sathwika Bavikadie</p>
+<p class="cursive-font">Learning is paramount and everything else comes later.</p>
+    <p>&copy; <span id="year"></span> Sathwika Bavikadi</p>
     <p>Last updated: <span id="lastUpdated"></span></p>
   </footer>
-  <script>
+<!--  <script> // fro time stamp
     // Set current year
     document.getElementById("year").textContent = new Date().getFullYear();
 
     // Set last updated timestamp
-    const lastUpdated = document.lastModified;
-    document.getElementById("lastUpdated").textContent = lastUpdated;
-  </script>
+   <!-- const lastUpdated = document.lastModified; -->
+   <!-- document.getElementById("lastUpdated").textContent = lastUpdated; -->
+	   
+  const lastModified = new Date(document.lastModified);
+    const options = { year: 'numeric', month: 'long' }; // E.g., "October 2024"
+    document.getElementById("lastUpdated").textContent = lastModified.toLocaleDateString(undefined, options);
+ </script>-->
 		
 <a href="https://clustrmaps.com/site/1c08z"  title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?d=uLZkocQGAXEuQoOe5nWpVaKxEniVsgM9yKRBBoQgTzo&cl=ffffff" /></a>
     </td>
