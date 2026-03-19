@@ -7,9 +7,15 @@
    <!-- <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> -->
 	  <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="google-site-verification" content="5zXEGNhX3lx3YuDkBSA0DbZYLM-BmeBD4-Z3hitKjY4" />
+	<meta name="author" content="Sathwika Bavikadi">
+  <title>Sathwika Bavikadi — Assistant Professor, RIT</title>
 
     <link rel="icon" type="image/png" href="images/Sathwika Bavikadi-HS.jpg">
     <link rel="stylesheet" href="css/academicons.min.css"/>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 
 <!-- Global site tag (gtag.js) → Google Analytics -->
 <!--   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112406581-4"></script>
@@ -22,23 +28,7 @@
   </script> -->
  <!-- End Google Analytics -->
 	  
-  <title>Sathwika Bavikadi</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-  <style>
-    .cursive-font {
-      font-family: 'Dancing Script', cursive;
-      font-size: 24px; /* Adjust size as needed */
-    }
-  </style>
- 
-  <meta name="author" content="Sathwika Bavikadi">
- <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-  
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   
 <style>
 body {
   margin: 0;
@@ -171,7 +161,7 @@ body {
     display: none; /* Hide items beyond the initially visible ones */
 
 
-}
+} 
 
     :root {
       --navy:       #0d1f3c;
@@ -190,14 +180,15 @@ body {
       --border-soft:rgba(13,31,60,0.06);
     }
  
+
+    /* ── RESET ── */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; font-size: 16px; }
+    html { scroll-behavior: smooth; }
     body { font-family: 'Outfit', sans-serif; background: var(--cream); color: var(--text); line-height: 1.7; overflow-x: hidden; }
     a { color: var(--teal); text-decoration: none; transition: color .2s; }
     a:hover { color: var(--teal-light); }
     ul { list-style: none; }
- 
-    /* NAVBAR */
+ /* ── NAVBAR ── */
     .navbar {
       position: sticky; top: 0; z-index: 1000;
       display: flex; align-items: center; justify-content: space-between;
@@ -206,233 +197,334 @@ body {
       border-bottom: 1px solid rgba(255,255,255,0.06);
       box-shadow: 0 2px 20px rgba(0,0,0,0.25);
     }
-    .navbar .title { font-family: 'Cormorant Garamond', serif; font-size: 1.25rem; font-weight: 600; color: var(--white); letter-spacing: .02em; }
-    .navbar .title span { color: var(--teal-light); }
+    .navbar .brand {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.2rem; font-weight: 600;
+      color: var(--white); letter-spacing: .02em;
+    }
+    .navbar .brand span { color: var(--teal-light); }
     .topnav { display: flex; }
     .topnav a {
-      color: rgba(255,255,255,.65); font-size: .78rem; letter-spacing: .08em; text-transform: uppercase;
-      font-weight: 500; padding: 0 1rem; height: 60px; display: flex; align-items: center;
-      border-bottom: 2px solid transparent; transition: color .2s, border-color .2s;
+      color: rgba(255,255,255,.62); font-size: .75rem;
+      letter-spacing: .08em; text-transform: uppercase; font-weight: 500;
+      padding: 0 .9rem; height: 60px; display: flex; align-items: center;
+      border-bottom: 2px solid transparent;
+      transition: color .2s, border-color .2s;
+      text-decoration: none;
     }
-    .topnav a:hover, .topnav a.active { color: var(--teal-light); border-bottom-color: var(--teal-light); background: transparent; }
+    .topnav a:hover, .topnav a.active {
+      color: var(--teal-light);
+      border-bottom-color: var(--teal-light);
+    }
  
-    /* HERO */
-    .hero { background: var(--navy); padding: 70px 5vw 60px; position: relative; overflow: hidden; }
+    /* ── HERO ── */
+    .hero {
+      background: var(--navy);
+      padding: 72px 5vw 60px;
+      position: relative; overflow: hidden;
+    }
     .hero::before {
       content: ''; position: absolute; inset: 0; pointer-events: none;
-      background: radial-gradient(ellipse 55% 80% at 80% 50%, rgba(15,123,108,.18) 0%, transparent 65%),
-                  radial-gradient(ellipse 30% 40% at 5% 90%, rgba(191,140,58,.10) 0%, transparent 60%);
+      background:
+        radial-gradient(ellipse 55% 80% at 80% 50%, rgba(15,123,108,.18) 0%, transparent 65%),
+        radial-gradient(ellipse 30% 40% at 5%  90%, rgba(191,140,58,.10) 0%, transparent 60%);
     }
-    .hero-inner { max-width: 900px; margin: auto; display: grid; grid-template-columns: 1fr auto; gap: 3rem; align-items: center; position: relative; z-index: 1; }
-    .hero-eyebrow { display: inline-flex; align-items: center; gap: .6rem; font-size: .72rem; letter-spacing: .15em; text-transform: uppercase; color: var(--teal-light); font-weight: 500; margin-bottom: 1rem; }
-    .hero-eyebrow::before { content: ''; width: 24px; height: 2px; background: var(--teal-light); }
-    .hero h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.4rem, 5vw, 3.8rem); color: var(--white); line-height: 1.1; margin-bottom: .6rem; }
+    /* The key fix: hero-inner is the grid wrapper */
+    .hero-inner {
+      width: 100%;
+      display: grid; grid-template-columns: 1fr auto;
+      gap: 3rem; align-items: center;
+      position: relative; z-index: 1;
+    }
+    .hero-eyebrow {
+      display: inline-flex; align-items: center; gap: .6rem;
+      font-size: .72rem; letter-spacing: .15em; text-transform: uppercase;
+      color: var(--teal-light); font-weight: 500; margin-bottom: 1rem;
+    }
+    .hero-eyebrow::before { content: ''; width: 22px; height: 2px; background: var(--teal-light); }
+    .hero h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.4rem, 5vw, 3.8rem);
+      color: var(--white); line-height: 1.1; margin-bottom: .65rem;
+    }
     .hero h1 em { font-style: italic; color: var(--teal-light); }
-    .hero-pos { font-size: .9rem; color: rgba(255,255,255,.55); margin-bottom: 1.4rem; line-height: 1.6; }
+    .hero-pos { font-size: .9rem; color: rgba(255,255,255,.55); margin-bottom: 1.4rem; line-height: 1.65; }
     .hero-pos strong { color: rgba(255,255,255,.82); font-weight: 500; }
-    .hero-bio { font-size: .96rem; color: rgba(255,255,255,.65); max-width: 520px; line-height: 1.78; margin-bottom: 1.8rem; }
-    .hero-actions { display: flex; gap: .8rem; flex-wrap: wrap; }
-    .btn { display: inline-flex; align-items: center; gap: .45rem; padding: .62rem 1.3rem; border-radius: 4px; font-size: .82rem; font-weight: 500; letter-spacing: .04em; transition: all .2s; cursor: pointer; }
+    .hero-bio { font-size: .95rem; color: rgba(255,255,255,.65); line-height: 1.78; margin-bottom: 1.8rem; }
+ 
+    .hero-actions { display: flex; gap: .8rem; flex-wrap: wrap; margin-bottom: 2rem; }
+    .btn {
+      display: inline-flex; align-items: center; gap: .4rem;
+      padding: .62rem 1.3rem; border-radius: 4px;
+      font-size: .82rem; font-weight: 500; letter-spacing: .04em;
+      transition: all .2s; cursor: pointer; text-decoration: none;
+    }
     .btn-primary { background: var(--teal-mid); color: var(--white); }
     .btn-primary:hover { background: var(--teal); color: var(--white); }
-    .btn-ghost { background: transparent; border: 1px solid rgba(255,255,255,.22); color: rgba(255,255,255,.75); }
+    .btn-ghost { background: transparent; border: 1px solid rgba(255,255,255,.25); color: rgba(255,255,255,.78); }
     .btn-ghost:hover { border-color: var(--teal-light); color: var(--teal-light); }
  
-    .hero-photo-col { text-align: center; }
-    .hero-photo-col img { width: 180px; height: 180px; border-radius: 50%; object-fit: cover; border: 3px solid rgba(255,255,255,.12); outline: 8px solid rgba(15,123,108,.2); display: block; margin: 0 auto 1.2rem; }
-    .social-icons { display: flex; gap: .8rem; justify-content: center; flex-wrap: wrap; }
-    .social-icons a { width: 36px; height: 36px; border-radius: 50%; background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.12); display: flex; align-items: center; justify-content: center; font-size: 1rem; color: rgba(255,255,255,.65); transition: all .2s; }
-    .social-icons a:hover { background: var(--teal-mid); border-color: var(--teal-mid); color: var(--white); }
- 
-    .hero-stats { display: flex; gap: 0; margin-top: 2.5rem; background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.08); border-radius: 8px; overflow: hidden; max-width: 420px; }
+    .hero-stats {
+      display: flex; gap: 0;
+      background: rgba(255,255,255,.05);
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 8px; overflow: hidden;
+      max-width: 340px;
+    }
     .stat { flex: 1; padding: 1rem .8rem; text-align: center; border-right: 1px solid rgba(255,255,255,.08); }
     .stat:last-child { border-right: none; }
-    .stat-n { font-family: 'Cormorant Garamond', serif; font-size: 1.9rem; color: var(--gold-light); display: block; line-height: 1; }
-    .stat-l { font-size: .65rem; letter-spacing: .08em; text-transform: uppercase; color: rgba(255,255,255,.4); margin-top: .25rem; display: block; }
+    .stat-n { font-family: 'Cormorant Garamond', serif; font-size: 1.85rem; color: var(--gold-light); display: block; line-height: 1; }
+    .stat-l { font-size: .63rem; letter-spacing: .08em; text-transform: uppercase; color: rgba(255,255,255,.4); margin-top: .25rem; display: block; }
  
-    /* LAYOUT */
-    .page-wrap { max-width: 900px; margin: auto; padding: 0 5vw; }
-    section { padding: 72px 0; }
-    .section-tag { display: inline-flex; align-items: center; gap: .55rem; font-size: .7rem; letter-spacing: .14em; text-transform: uppercase; color: var(--teal); font-weight: 600; margin-bottom: .6rem; }
-    .section-tag::before { content: ''; width: 20px; height: 2px; background: var(--teal); }
-    h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(1.7rem, 3vw, 2.4rem); color: var(--navy); line-height: 1.2; margin-bottom: 2rem; }
+    /* photo col */
+    .hero-photo-col { text-align: center; flex-shrink: 0; }
+    .hero-photo-col img {
+      width: 190px; height: 190px; border-radius: 50%; object-fit: cover;
+      border: 3px solid rgba(255,255,255,.12);
+      outline: 8px solid rgba(15,123,108,.2);
+      display: block; margin: 0 auto 1.2rem;
+    }
+    .social-icons { display: flex; gap: .7rem; justify-content: center; flex-wrap: wrap; }
+    .social-icons a {
+      width: 36px; height: 36px; border-radius: 50%;
+      background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.12);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1rem; color: rgba(255,255,255,.65);
+      transition: all .2s; text-decoration: none;
+    }
+    .social-icons a:hover { background: var(--teal-mid); border-color: var(--teal-mid); color: var(--white); }
  
-    /* RESEARCH */
+    /* ── SHARED SECTION STYLES ── */
+    .page-wrap { width: 100%; padding: 0 5vw; }
+    section { padding: 70px 0; }
+ 
+    .section-tag {
+      display: inline-flex; align-items: center; gap: .5rem;
+      font-size: .7rem; letter-spacing: .14em; text-transform: uppercase;
+      color: var(--teal); font-weight: 600; margin-bottom: .55rem;
+    }
+    .section-tag::before { content: ''; width: 18px; height: 2px; background: var(--teal); }
+ 
+    h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.7rem, 3vw, 2.4rem);
+      color: var(--navy); line-height: 1.2; margin-bottom: 1.8rem;
+    }
+ 
+    /* ── RESEARCH ── */
     #research { background: var(--white); }
-    .research-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; margin-bottom: 2rem; }
+    .research-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 1px; background: var(--border);
+      border: 1px solid var(--border); border-radius: 10px; overflow: hidden;
+      margin-bottom: 2rem;
+    }
     .rc { background: var(--white); padding: 1.8rem; transition: background .2s; }
     .rc:hover { background: var(--cream); }
     .rc-icon { width: 40px; height: 40px; border-radius: 8px; background: var(--navy); display: flex; align-items: center; justify-content: center; font-size: 1.1rem; margin-bottom: 1rem; }
     .rc h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; color: var(--navy); margin-bottom: .45rem; }
     .rc p { font-size: .86rem; color: var(--muted); line-height: 1.65; }
     .rc-tags { display: flex; flex-wrap: wrap; gap: .35rem; margin-top: .9rem; }
-    .tag { font-family: 'DM Mono', monospace; font-size: .65rem; padding: .18rem .5rem; background: rgba(13,31,60,.07); color: var(--navy); border-radius: 3px; }
-    .recruit-banner { background: linear-gradient(135deg, rgba(15,123,108,.08), rgba(15,123,108,.03)); border: 1px solid rgba(15,123,108,.2); border-left: 3px solid var(--teal-mid); border-radius: 6px; padding: 1.1rem 1.4rem; font-size: .9rem; color: var(--text); line-height: 1.65; }
-    .recruit-banner strong { color: var(--teal); }
-    .research-img-row { display: grid; grid-template-columns: 1fr auto; gap: 2rem; align-items: start; }
-    .research-img-row img { width: 200px; border-radius: 8px; border: 1px solid var(--border); }
+    .tag { font-family: 'DM Mono', monospace; font-size: .64rem; padding: .17rem .48rem; background: rgba(13,31,60,.07); color: var(--navy); border-radius: 3px; }
  
-    /* NEWS */
-    #news { background: var(--cream); }
-    .news-list { display: flex; flex-direction: column; }
-    .ni { display: grid; grid-template-columns: 130px 1fr; gap: 1.2rem; padding: 1.1rem 0; border-bottom: 1px solid var(--border); align-items: start; }
-    .ni:first-child { border-top: 1px solid var(--border); }
-    .ni-date { font-family: 'DM Mono', monospace; font-size: .72rem; color: var(--teal); letter-spacing: .04em; padding-top: .1rem; }
-    .ni-text { font-size: .9rem; color: var(--text); line-height: 1.6; }
-    .badge { display: inline-block; font-size: .62rem; padding: .13rem .45rem; border-radius: 20px; margin-right: .35rem; font-weight: 600; letter-spacing: .04em; vertical-align: middle; }
-    .b-paper  { background: rgba(15,123,108,.12); color: var(--teal); }
-    .b-award  { background: rgba(191,140,58,.15);  color: var(--gold); }
-    .b-talk   { background: rgba(13,31,60,.08);    color: var(--navy); }
-    .b-event  { background: rgba(100,80,160,.1);   color: #5a3e9e; }
- 
-    /* PUBLICATIONS */
-    #publications { background: var(--white); }
-    .pub-type { font-family: 'DM Mono', monospace; font-size: .7rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin: 2.2rem 0 1rem; padding-bottom: .5rem; border-bottom: 1px solid var(--border); }
-    .pub-type:first-of-type { margin-top: 0; }
-    .pub-row { display: grid; grid-template-columns: 140px 1fr; gap: 1.4rem; padding: 1.4rem 0; border-bottom: 1px solid var(--border-soft); align-items: start; }
-    .pub-row:last-child { border-bottom: none; }
-    .pub-row img { width: 140px; height: 80px; object-fit: cover; border-radius: 5px; border: 1px solid var(--border); background: var(--cream-dark); }
-    .pub-title { font-size: .94rem; font-weight: 500; color: var(--navy); margin-bottom: .3rem; line-height: 1.45; }
-    .pub-title a { color: inherit; }
-    .pub-title a:hover { color: var(--teal); }
-    .pub-authors { font-size: .82rem; color: var(--muted); margin-bottom: .25rem; }
-    .pub-authors strong { color: var(--navy); font-weight: 500; }
-    .pub-kw { font-size: .78rem; color: var(--muted); margin-bottom: .3rem; }
-    .pub-kw strong { color: var(--text); }
-    .pub-venue { font-size: .8rem; color: var(--teal); font-style: italic; margin-bottom: .45rem; }
-    .pub-links { display: flex; gap: .9rem; }
-    .pub-link { font-family: 'DM Mono', monospace; font-size: .68rem; color: var(--teal); letter-spacing: .05em; text-transform: uppercase; border-bottom: 1px solid rgba(15,123,108,.3); transition: border-color .2s; }
-    .pub-link:hover { border-color: var(--teal); }
- 
-    /* AWARDS */
-    #awards { background: var(--navy); }
-    #awards .section-tag { color: var(--gold-light); }
-    #awards .section-tag::before { background: var(--gold-light); }
-    #awards h2 { color: var(--white); }
-    .awards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 1px; background: rgba(255,255,255,.07); border-radius: 8px; overflow: hidden; }
-    .aw { background: rgba(255,255,255,.04); padding: 1.3rem 1.4rem; }
-    .aw-year { font-family: 'DM Mono', monospace; font-size: .72rem; color: var(--gold-light); letter-spacing: .07em; margin-bottom: .4rem; }
-    .aw-name { font-size: .88rem; color: rgba(255,255,255,.8); line-height: 1.5; }
- 
-    /* TEACHING */
-    #teaching { background: var(--cream-dark); }
-    .course-list { display: flex; flex-direction: column; gap: .6rem; }
-    .course-item { display: flex; align-items: center; gap: 1rem; background: var(--white); border: 1px solid var(--border); border-radius: 6px; padding: .9rem 1.2rem; }
-    .course-sem { font-family: 'DM Mono', monospace; font-size: .72rem; color: var(--teal); white-space: nowrap; min-width: 90px; }
-    .course-name { font-size: .9rem; color: var(--navy); font-weight: 500; }
- 
-    /* TALKS */
-    #talks { background: var(--white); }
-    .talk-list { display: flex; flex-direction: column; }
-    .talk-item { display: grid; grid-template-columns: 60px 1fr; gap: 1rem; padding: .9rem 0; border-bottom: 1px solid var(--border-soft); font-size: .9rem; color: var(--text); }
-    .talk-year { font-family: 'DM Mono', monospace; font-size: .72rem; color: var(--gold); font-weight: 500; padding-top: .1rem; }
- 
-    /* SERVICE */
-    #service { background: var(--cream); }
-    .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.2rem; }
-    .sc { background: var(--white); border: 1px solid var(--border); border-radius: 8px; padding: 1.5rem; }
-    .sc h3 { font-family: 'DM Mono', monospace; font-size: .7rem; letter-spacing: .1em; text-transform: uppercase; color: var(--teal); font-weight: 600; margin-bottom: .9rem; }
-    .sc p, .sc li { font-size: .86rem; color: var(--muted); line-height: 1.6; }
-    .sc ul { display: flex; flex-direction: column; gap: .3rem; }
-    .sc li { padding: .25rem 0; border-bottom: 1px solid var(--border-soft); }
-    .sc li:last-child { border-bottom: none; }
- 
-    /* MEDIA */
-    #media { background: var(--white); }
- 
-    /* JOIN */
-    .join-banner { background: var(--teal-mid); padding: 64px 5vw; text-align: center; }
+    /* ── JOIN LAB ── */
+    .join-banner { background: var(--teal-mid); padding: 60px 5vw; text-align: center; }
     .join-banner .section-tag { color: rgba(255,255,255,.75); justify-content: center; }
     .join-banner .section-tag::before { background: rgba(255,255,255,.5); }
-    .join-banner h2 { color: var(--white); text-align: center; }
-    .join-banner p { color: rgba(255,255,255,.82); max-width: 520px; margin: 0 auto 2rem; font-size: .98rem; line-height: 1.75; }
+    .join-banner h2 { color: var(--white); text-align: center; margin-bottom: 1rem; }
+    .join-banner p { color: rgba(255,255,255,.82); max-width: 540px; margin: 0 auto 1.8rem; font-size: .96rem; line-height: 1.75; }
     .join-banner .btn-primary { background: var(--white); color: var(--teal); font-weight: 600; }
     .join-banner .btn-primary:hover { background: var(--cream); color: var(--teal); }
     .join-banner .btn-ghost { border-color: rgba(255,255,255,.35); color: var(--white); }
     .join-banner .btn-ghost:hover { border-color: var(--white); color: var(--white); }
+    .join-reqs {
+      display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;
+      margin-bottom: 1.8rem;
+    }
+    .join-req {
+      background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.2);
+      border-radius: 20px; padding: .35rem .9rem;
+      font-size: .78rem; color: rgba(255,255,255,.9);
+      font-family: 'DM Mono', monospace;
+    }
  
-    /* FOOTER */
-    footer { background: var(--navy); padding: 2.2rem 5vw; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; border-top: 1px solid rgba(255,255,255,.06); }
-    .footer-logo { font-family: 'Cormorant Garamond', serif; color: rgba(255,255,255,.6); font-size: 1rem; }
-    footer p { font-size: .78rem; color: rgba(255,255,255,.3); }
-    footer a { color: var(--teal-light); font-family: 'DM Mono', monospace; font-size: .8rem; }
+    /* ── NEWS ── */
+    #news { background: var(--cream); }
+    .news-list { display: flex; flex-direction: column; }
+    .news-item {
+      display: grid; grid-template-columns: 130px 1fr;
+      gap: 1.2rem; padding: 1.1rem 0;
+      border-bottom: 1px solid var(--border); align-items: start;
+    }
+    .news-item:first-child { border-top: 1px solid var(--border); }
+    .news-date { font-family: 'DM Mono', monospace; font-size: .72rem; color: var(--teal); letter-spacing: .04em; padding-top: .1rem; }
+    .news-text { font-size: .9rem; color: var(--text); line-height: 1.6; }
+    .news-badge {
+      display: inline-block; font-size: .62rem; padding: .13rem .45rem;
+      border-radius: 20px; margin-right: .35rem; font-weight: 600;
+      letter-spacing: .04em; vertical-align: middle;
+    }
+    .badge-paper  { background: rgba(15,123,108,.12); color: var(--teal); }
+    .badge-award  { background: rgba(191,140,58,.15);  color: var(--gold); }
+    .badge-talk   { background: rgba(13,31,60,.08);    color: var(--navy); }
+    .badge-grant  { background: rgba(100,80,160,.10);  color: #5a3e9e; }
  
-    /* REVEAL */
-    .reveal { opacity: 0; transform: translateY(18px); transition: opacity .55s ease, transform .55s ease; }
+    /* ── PUBLICATIONS ── */
+    #publications { background: var(--white); }
+    .pub-type-label {
+      font-family: 'DM Mono', monospace; font-size: .7rem;
+      letter-spacing: .1em; text-transform: uppercase;
+      color: var(--muted); margin: 2rem 0 .9rem;
+      padding-bottom: .45rem; border-bottom: 1px solid var(--border);
+    }
+    .pub-type-label:first-of-type { margin-top: 0; }
+    .pub-card {
+      padding: 1.3rem 0 1.3rem 1.1rem;
+      border-left: 2px solid transparent;
+      border-bottom: 1px solid var(--border-soft);
+      transition: border-color .2s;
+    }
+    .pub-card:hover { border-left-color: var(--teal-light); }
+    .pub-card:last-child { border-bottom: none; }
+    .pub-title { font-size: .94rem; font-weight: 500; color: var(--navy); margin-bottom: .3rem; line-height: 1.45; }
+    .pub-title a { color: inherit; }
+    .pub-title a:hover { color: var(--teal); }
+    .pub-authors { font-size: .82rem; color: var(--muted); margin-bottom: .28rem; }
+    .pub-authors strong { color: var(--navy); font-weight: 500; }
+    .pub-venue { font-size: .8rem; color: var(--teal); font-style: italic; margin-bottom: .4rem; }
+    .pub-links { display: flex; gap: .9rem; }
+    .pub-link {
+      font-family: 'DM Mono', monospace; font-size: .68rem; color: var(--teal);
+      letter-spacing: .05em; text-transform: uppercase;
+      border-bottom: 1px solid rgba(15,123,108,.3); transition: border-color .2s;
+    }
+    .pub-link:hover { border-color: var(--teal); }
+ 
+    /* ── TEACHING ── */
+    #teaching { background: var(--cream); }
+    .course-list { display: flex; flex-direction: column; gap: .6rem; }
+    .course-item {
+      display: flex; align-items: center; gap: 1rem;
+      background: var(--white); border: 1px solid var(--border);
+      border-radius: 6px; padding: .9rem 1.2rem;
+    }
+    .course-sem { font-family: 'DM Mono', monospace; font-size: .72rem; color: var(--teal); white-space: nowrap; min-width: 90px; }
+    .course-code {
+      font-family: 'DM Mono', monospace; font-size: .72rem;
+      background: rgba(15,123,108,.1); color: var(--teal);
+      padding: .2rem .5rem; border-radius: 4px; white-space: nowrap;
+    }
+    .course-name { font-size: .9rem; color: var(--navy); font-weight: 500; }
+ 
+    /* ── AWARDS ── */
+    #awards { background: var(--navy); }
+    #awards .section-tag { color: var(--gold-light); }
+    #awards .section-tag::before { background: var(--gold-light); }
+    #awards h2 { color: var(--white); }
+    .awards-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      gap: 1px; background: rgba(255,255,255,.07);
+      border-radius: 8px; overflow: hidden;
+    }
+    .aw { background: rgba(255,255,255,.04); padding: 1.3rem 1.4rem; }
+    .aw-year { font-family: 'DM Mono', monospace; font-size: .72rem; color: var(--gold-light); letter-spacing: .07em; margin-bottom: .4rem; }
+    .aw-name { font-size: .88rem; color: rgba(255,255,255,.8); line-height: 1.5; }
+ 
+    /* ── SERVICE ── */
+    #service { background: var(--white); }
+    .service-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.2rem; }
+    .sc { background: var(--cream); border: 1px solid var(--border); border-radius: 8px; padding: 1.5rem; }
+    .sc h3 { font-family: 'DM Mono', monospace; font-size: .68rem; letter-spacing: .1em; text-transform: uppercase; color: var(--teal); font-weight: 600; margin-bottom: .9rem; }
+    .sc li { font-size: .86rem; color: var(--muted); padding: .28rem 0; border-bottom: 1px solid var(--border-soft); line-height: 1.5; }
+    .sc li:last-child { border-bottom: none; }
+ 
+    /* ── FOOTER ── */
+    footer {
+      background: var(--navy);
+      padding: 2.5rem 5vw;
+      text-align: center;
+      border-top: 1px solid rgba(255,255,255,.06);
+    }
+    footer .quote { font-style: italic; color: rgba(255,255,255,.4); font-size: .9rem; margin-bottom: .8rem; }
+    footer .copy { font-size: .76rem; color: rgba(255,255,255,.25); }
+ 
+    /* ── SCROLL REVEAL ── */
+    .reveal { opacity: 0; transform: translateY(16px); transition: opacity .5s ease, transform .5s ease; }
     .reveal.in { opacity: 1; transform: none; }
  
-    /* RESPONSIVE */
-    @media (max-width: 700px) {
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      .research-grid { grid-template-columns: 1fr; }
+      .awards-grid   { grid-template-columns: repeat(2, 1fr); }
+      .service-grid  { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 680px) {
       .hero-inner { grid-template-columns: 1fr; }
       .hero-photo-col { order: -1; }
-      .hero-photo-col img { width: 130px; height: 130px; }
-      .topnav a { padding: 0 .6rem; font-size: .7rem; }
-      .pub-row { grid-template-columns: 1fr; }
-      .pub-row img { width: 100%; height: 140px; }
-      .research-img-row { grid-template-columns: 1fr; }
-      .research-img-row img { width: 100%; }
-      .ni { grid-template-columns: 1fr; gap: .25rem; }
-      footer { flex-direction: column; text-align: center; }
+      .hero-photo-col img { width: 140px; height: 140px; }
+      .topnav a { padding: 0 .55rem; font-size: .68rem; }
+      .news-item { grid-template-columns: 1fr; gap: .2rem; }
+      .course-item { flex-wrap: wrap; }
+      .awards-grid  { grid-template-columns: 1fr; }
+      .service-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
 <body>
 
-
-<!-- NAVBAR -->		
+<!-- ═══ NAVBAR ═══════════════════════════════════════════ -->
 <div class="navbar">
-<div class="title">Sathwika Bavikadi</div>
-<div class="topnav">
+  <div class="brand">Sathwika <span>Bavikadi</span></div>
+  <div class="topnav">
     <a href="#bio">Bio</a>
-    <a href="#news">Research</a>
-	<a href="#media">Join Lab</a>
-    <a href="#research">News</a>
+    <a href="#research">Research</a>
+    <a href="#join">Join Lab</a>
+    <a href="#news">News</a>
     <a href="#publications">Publications</a>
-	<a href="#service">Service</a>    
+    <a href="#service">Service</a>
   </div>
 </div>
-
-<!-- HERO / BIO -->
-
+ 
+<!-- ═══ HERO / BIO ═══════════════════════════════════════ -->
 <section class="hero" id="bio">
-<div class="hero-grid-bg"></div>
-  <div class="hero-text">
-  <!--<div class="hero-inner">
-    <div class="hero-text">-->
+  <div class="hero-inner">
+ 
+    <!-- Left: text -->
+    <div class="hero-text">
       <div class="hero-eyebrow">Tenure Track Assistant Professor · RIT</div>
       <h1>Sathwika<br><em>Bavikadi</em></h1>
       <p class="hero-pos">
         <strong>Department of Computer Engineering</strong><br>
         Rochester Institute of Technology, New York<br>
-        <span style="font-family:'DM Mono',monospace;font-size:.82rem;color:rgba(255,255,255,.45);">sxbeec at rit dot edu</span>
+        <span style="font-family:'DM Mono',monospace;font-size:.8rem;color:rgba(255,255,255,.4);">sxbeec at rit dot edu</span>
       </p>
       <p class="hero-bio">
-        My research bridges machine learning and hardware — creating customized computer architectures for domain-specific applications in healthcare, security, IoT, AI, and ML.
-        I completed my PhD at <a href="https://ece.gmu.edu/" style="color:var(--teal-light);">George Mason University</a> and previously worked as a Baseband Developer at Ericsson (Sweden). MS from Blekinge Institute of Technology, Sweden; Bachelor's from Jawaharlal Technological University, Kukatpally, Hyderabad.
+        My research focuses on the intersection of machine learning and hardware accelerator design, with an emphasis on building customized computing architectures and programming models optimized for domain-specific applications such as healthcare, transportation, security, IoT, and artificial intelligence.
+        I completed my PhD at <a href="https://ece.gmu.edu/" style="color:var(--teal-light);">George Mason University</a> and previously worked as a Baseband Developer at Ericsson (Sweden).
+        MS from Blekinge Institute of Technology, Sweden. Bachelor's from Jawaharlal Nehru Technological University, Hyderabad.
       </p>
       <div class="hero-actions">
         <a href="mailto:sxbeec@rit.edu" class="btn btn-primary">✉ Email Me</a>
-        <!-- <a href="https://scholar.google.com/citations?user=EjyNQ4wAAAAJ&hl=en" target="_blank" class="btn btn-ghost">Google Scholar</a> -->
         <a href="https://forms.gle/McUv28ErQGnxK5fv8" target="_blank" class="btn btn-ghost">Join My Lab</a>
       </div>
       <div class="hero-stats">
         <div class="stat"><span class="stat-n">15+</span><span class="stat-l">Publications</span></div>
         <div class="stat"><span class="stat-n">1</span><span class="stat-l">Granted Patent</span></div>
-        <!--<div class="stat"><span class="stat-n">8+</span><span class="stat-l">Awards</span></div>
-        <div class="stat"><span class="stat-n">5+</span><span class="stat-l">Yrs Research</span></div> -->
+        <div class="stat"><span class="stat-n">8+</span><span class="stat-l">Awards</span></div>
       </div>
     </div>
+ 
+    <!-- Right: photo + icons -->
     <div class="hero-photo-col">
       <img src="images/Sathwika Bavikadi-HS.jpg" alt="Sathwika Bavikadi">
       <div class="social-icons">
-       <!-- <a href="mailto:sxbeec@rit.edu" title="Email"><i class="fas fa-envelope"></i></a> -->
         <a href="https://www.linkedin.com/in/sathwika-bavikadi" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
         <a href="https://scholar.google.com/citations?user=EjyNQ4wAAAAJ&hl=en" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar-square"></i></a>
         <a href="https://www.researchgate.net/profile/Sathwika-Bavikadi" target="_blank" title="ResearchGate"><i class="fab fa-researchgate"></i></a>
-      <!--  <a href="path/to/your/cv.pdf" target="_blank" title="CV"><i class="ai ai-cv-square"></i></a> -->
       </div>
     </div>
-  </div>
+ 
+  </div><!-- /.hero-inner -->
 </section>
 <!--		
   <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;padding-top: 60px;"><tbody>
@@ -504,32 +596,35 @@ Before joining GMU, I worked as a PD Baseband Developer at Ericsson, Lund, Swede
 	</table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 -->
-<!-- RESEARCH -->
 
-	<section class="research-section" id="research">
-  <div class="section-label">Focus Areas</div>
-  <h2>Research Interests</h2>
-  <p style="max-width:620px; color:var(--text-muted); margin-bottom:2.5rem; font-size:0.96rem; line-height:1.75;">
-    By addressing key challenges in memory management, performance optimization, energy efficiency, and system usability, my work makes intelligent computing more accessible across a wide range of real-world scenarios.
-  </p>
-  <div class="research-grid reveal">
-    <div class="research-card">
-      <div class="research-icon">🧠</div>
-      <h3>Memory-Centric AI</h3>
-      <p>Co-designing algorithms and architectures that push compute into/near memory for low-latency, low-energy learning and inference.</p>
-      <div class="research-tags"><span class="tag">Processing-in-Memory</span><span class="tag">Processing-near-Memory</span><span class="tag">LUT-based Compute</span></div>
-    </div>
-    <div class="research-card">
-      <div class="research-icon">⚡</div>
-      <h3>Efficient LLMs & GNNs on Device</h3>
-      <p>Sparse, quantized, and retrieval-augmented models tailored for edge hardware and heterogeneous SoCs.</p>
-      <div class="research-tags"><span class="tag">Quantization</span><span class="tag">Edge AI</span><span class="tag">RAG</span></div>
-    </div>
-    <div class="research-card">
-      <div class="research-icon">🔧</div>
-      <h3>Algorithm–Architecture Co-design</h3>
-      <p>Scheduling, dataflow, and partitioning strategies that align model structure with memory hierarchies and bandwidth constraints.</p>
-      <div class="research-tags"><span class="tag">Dataflow Optimization</span><span class="tag">Hardware Mapping</span><span class="tag">DNN Acceleration</span></div>
+<!-- ═══ RESEARCH ══════════════════════════════════════════ -->
+<section id="research">
+  <div class="page-wrap">
+    <div class="section-tag">Focus Areas</div>
+    <h2>Research Interests</h2>
+    <p style="max-width:640px;color:var(--muted);margin-bottom:1.8rem;font-size:.95rem;line-height:1.78;">
+      By addressing key challenges in memory management, performance optimization, energy efficiency,
+      and system usability, my work makes intelligent computing more accessible across a wide range of real-world scenarios.
+    </p>
+    <div class="research-grid reveal">
+      <div class="rc">
+        <div class="rc-icon">🧠</div>
+        <h3>Memory-Centric AI</h3>
+        <p>Co-designing algorithms and architectures that push compute into/near memory for low-latency, low-energy learning and inference.</p>
+        <div class="rc-tags"><span class="tag">Processing-in-Memory</span><span class="tag">Processing-near-Memory</span><span class="tag">LUT-based Compute</span></div>
+      </div>
+      <div class="rc">
+        <div class="rc-icon">⚡</div>
+        <h3>Efficient LLMs &amp; GNNs on Device</h3>
+        <p>Sparse, quantized, and retrieval-augmented models tailored for edge hardware and heterogeneous SoCs.</p>
+        <div class="rc-tags"><span class="tag">Quantization</span><span class="tag">Edge AI</span><span class="tag">RAG</span></div>
+      </div>
+      <div class="rc">
+        <div class="rc-icon">🔧</div>
+        <h3>Algorithm–Architecture Co-design</h3>
+        <p>Scheduling, dataflow, and partitioning strategies that align model structure with memory hierarchies and bandwidth constraints.</p>
+        <div class="rc-tags"><span class="tag">Dataflow Optimization</span><span class="tag">Hardware Mapping</span><span class="tag">DNN Acceleration</span></div>
+      </div>
     </div>
   </div>
 </section>
@@ -594,36 +689,75 @@ accelerators.
           <tr>
             <td> -->
 
-<!-- JOIN LAB -->
-<section class="joinlab-section" id="join">
-  <div class="section-label">Open Positions</div>
+<!-- ═══ JOIN LAB ═══════════════════════════════════════════ -->
+<div class="join-banner" id="join">
+  <div class="section-tag">Open Positions</div>
   <h2>Join My Intelligent Computing Research Lab</h2>
-  <p>My research currently has openings for PhD Students, MS, BS/MS students. Candidates need basic knowledge in one or more of the following: Digital System Design, VLSI, Machine Learning. </p>
-  <!--<p>I am seeking motivated and technically strong PhD students, interns, and research assistants (both graduate and undergraduate) to work on hardware-software co-design, efficient AI, and processing-in-memory architectures.</p>-->
-  <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+  <p>My research currently has openings for PhD, MS, and BS/MS students. Candidates need basic knowledge in one or more of the following areas:</p>
+  <div class="join-reqs">
+    <span class="join-req">Digital System Design</span>
+    <span class="join-req">VLSI</span>
+    <span class="join-req">Machine Learning</span>
+  </div>
+  <div style="display:flex;gap:.9rem;justify-content:center;flex-wrap:wrap;">
     <a href="https://forms.gle/McUv28ErQGnxK5fv8" target="_blank" class="btn btn-primary">Apply via Form</a>
-    <a href="mailto:sxbeec@rit.edu" class="btn btn-outline" style="border-color:rgba(255,255,255,0.4);color:white;">sxbeec@rit.edu</a>
+    <a href="mailto:sxbeec@rit.edu" class="btn btn-ghost">sxbeec@rit.edu</a>
+  </div>
+</div>
+ 
+<!-- ═══ NEWS ══════════════════════════════════════════════ -->
+<section id="news">
+  <div class="page-wrap">
+    <div class="section-tag">Updates</div>
+    <h2>Recent News</h2>
+    <div class="news-list reveal">
+      <div class="news-item">
+        <span class="news-date">March 2026</span>
+        <span class="news-text"><span class="news-badge badge-grant">Grant</span>Received the <strong>CHAI FaSe Seed Fund</strong> from Center for Human-aware AI at Rochester Institute of Technology.</span>
+      </div>
+      <div class="news-item">
+        <span class="news-date">Aug 2025</span>
+        <span class="news-text"><span class="news-badge badge-paper">Paper</span>'Enhancing Few-Shot Image Captioning with Discrete Region-Token Alignment and Retrieval Augmented Learning' accepted at <strong>MIPR 2025</strong>.</span>
+      </div>
+      <div class="news-item">
+        <span class="news-date">Jul 2025</span>
+        <span class="news-text"><span class="news-badge badge-paper">Paper</span>'3D-PLANE: A 3D-stacked DRAM-based Programmable SLM Accelerator' accepted at <strong>GLSVLSI 2025</strong>.</span>
+      </div>
+      <div class="news-item">
+        <span class="news-date">Jun 2025</span>
+        <span class="news-text"><span class="news-badge badge-paper">Paper</span>'Adora: An Arithmetic and Dynamic Operation Reconfigurable Accelerator' accepted as Poster at <strong>DAC 2025</strong>.</span>
+      </div>
+      <div class="news-item">
+        <span class="news-date">May 2025</span>
+        <span class="news-text"><span class="news-badge badge-award">Award</span>Received the <strong>ECE Outstanding Academic Achievement Award</strong> from George Mason University.</span>
+      </div>
+      <div class="news-item">
+        <span class="news-date">May 2025</span>
+        <span class="news-text"><span class="news-badge badge-award">Award</span>Received the <strong>Mason Innovation Award</strong> from George Mason University.</span>
+      </div>
+      <div class="news-item">
+        <span class="news-date">Jan 2025</span>
+        <span class="news-text"><span class="news-badge badge-grant">Grant</span>Received the <strong>Grant Writers Boot Camp Seed Fund</strong> from Rochester Institute of Technology.</span>
+      </div>
+      <div class="news-item">
+        <span class="news-date">Sep 2024</span>
+        <span class="news-text"><span class="news-badge badge-talk">Talk</span>Invited talk at <strong>ESWEEK 2024</strong> — LLM-PIM: Large Language Model Acceleration using Processing-In-Memory Architectures.</span>
+      </div>
+      <div class="news-item">
+        <span class="news-date">Aug 2024</span>
+        <span class="news-text">Joined <strong>Rochester Institute of Technology</strong> as Tenure Track Assistant Professor in Computer Engineering.</span>
+      </div>
+      <div class="news-item">
+        <span class="news-date">Mar 2024</span>
+        <span class="news-text"><span class="news-badge badge-award">Award</span>Selected as <strong>NSF iREDEFINE Fellow</strong> by ECEDHA.</span>
+      </div>
+      <div class="news-item">
+        <span class="news-date">Oct 2023</span>
+        <span class="news-text"><span class="news-badge badge-award">Patent</span>Patent <a href="https://patents.google.com/patent/US11775312B2/en" target="_blank">"Look-up table containing processor-in-memory cluster"</a> granted by the <strong>USPTO</strong>.</span>
+      </div>
+    </div>
   </div>
 </section>
-<!-- NEWS -->
-<section class="news-section" id="news">
-  <div class="section-label">Updates</div>
-  <h2>Recent News</h2>
-  <div class="news-list reveal">
-	  <div class="news-item"><span class="news-date">March 2026</span><span class="news-text"><span class="news-badge badge-award">Grant</span>Received the <strong>CHAI FaSe Seed Fund </strong> from Center for Human-aware AI at Rochester Institute of Technology</span></div>
-    <div class="news-item"><span class="news-date">Aug 2025</span><span class="news-text"><span class="news-badge badge-paper">Paper</span>'Enhancing Few-Shot Image Captioning with Discrete Region-Token Alignment and Retrieval Augmented Learning' accepted at <strong>MIPR 2025</strong>.</span></div>
-    <div class="news-item"><span class="news-date">Jul 2025</span><span class="news-text"><span class="news-badge badge-paper">Paper</span>'3D-PLANE: A 3D-stacked DRAM-based Programmable SLM Accelerator' accepted at <strong>GLSVLSI 2025</strong>.</span></div>
-    <div class="news-item"><span class="news-date">Jun 2025</span><span class="news-text"><span class="news-badge badge-paper">Paper</span>'Adora: An Arithmetic and Dynamic Operation Reconfigurable Accelerator' accepted as Poster at <strong>DAC 2025</strong>.</span></div>
-    <div class="news-item"><span class="news-date">May 2025</span><span class="news-text"><span class="news-badge badge-award">Award</span>Received the <strong>ECE Outstanding Academic Achievement Award</strong> from George Mason University.</span></div>
-    <div class="news-item"><span class="news-date">May 2025</span><span class="news-text"><span class="news-badge badge-award">Award</span>Received the <strong>Mason Innovation Award</strong> from George Mason University.</span></div>
-    <div class="news-item"><span class="news-date">Jan 2025</span><span class="news-text"><span class="news-badge badge-award">Grant</span>Received the <strong>Grant Writers Boot Camp Seed Fund </strong> from Rochester Institute of Technology.</span></div>
-    <div class="news-item"><span class="news-date">Sep 2024</span><span class="news-text"><span class="news-badge badge-talk">Talk</span>Invited talk at <strong>ESWEEK 2024</strong> — LLM-PIM: Large Language Model Acceleration using Processing-In-Memory Architectures.</span></div>
-    <div class="news-item"><span class="news-date">Aug 2024</span><span class="news-text">Joined <strong>Rochester Institute of Technology</strong> as Tenure Track Assistant Professor in Computer Engineering.</span></div>
-    <div class="news-item"><span class="news-date">Mar 2024</span><span class="news-text"><span class="news-badge badge-award">Award</span>Selected as <strong>NSF iREDEFINE Fellow</strong> by ECEDHA.</span></div>
-    <div class="news-item"><span class="news-date">Oct 2023</span><span class="news-text"><span class="news-badge badge-award">Patent</span>Patent <a href="https://patents.google.com/patent/US11775312B2/en" target="_blank" style="color:var(--teal);">"Look-up table containing processor-in-memory cluster"</a> granted by the <strong>USPTO</strong>.</span></div>
-  </div>
-</section>				
-
 	
 <!--	<heading>News</heading>
       <hr>
@@ -681,113 +815,186 @@ accelerators.
           <tr>
             <td> -->
 
-<!-- PUBLICATIONS -->
-<section class="pubs-section" id="publications">
-  <div class="section-label">Selected Works</div>
-  <h2>Publications</h2>
+<!-- ═══ PUBLICATIONS ══════════════════════════════════════ -->
+<section id="publications">
+  <div class="page-wrap">
+    <div class="section-tag">Selected Works</div>
+    <h2>Publications</h2>
  
-  <div class="pub-type-label">📄 Patent</div>
-  <div class="pub-card reveal">
-    <div class="pub-title"><a href="https://patents.google.com/patent/US11775312B2/en" target="_blank">Look-up table containing processor-in-memory cluster for data-intensive applications</a></div>
-    <div class="pub-authors">Amlan Ganguly, Sai Manoj P.D., Mark Connolly, Purab Ranjan Sutradhar, <strong>Sathwika Bavikadi</strong>, Mark Allen Indovina</div>
-    <div class="pub-venue">United States Patent and Trademark Office</div>
-  </div>
- 
-  <div class="pub-type-label">📰 Journal Papers</div>
-  <div class="pub-card reveal">
-    <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/10443597" target="_blank">ReApprox-PIM: Reconfigurable Approximate LUT-Based Processing-in-Memory ML Accelerator</a></div>
-    <div class="pub-authors"><strong>Sathwika Bavikadi</strong>, Purab Ranjan Sutradhar, Mark Indovina, Amlan Ganguly, Sai Manoj P.D.</div>
-    <div class="pub-venue">IEEE Transactions on Computer-Aided Design (TCAD), 2024</div>
-  </div>
-  <div class="pub-card reveal">
-    <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/10181127" target="_blank">3DL-PIM: A LUT-Oriented Programmable PIM Architecture Based on 3D-Stacked Memory</a></div>
-    <div class="pub-authors">Purab Ranjan Sutradhar, <strong>Sathwika Bavikadi</strong>, Mark Indovina, Sai Manoj P.D., Amlan Ganguly</div>
-    <div class="pub-venue">IEEE Transactions on Emerging Topics in Computing (TETC), 2023</div>
-  </div>
-  <div class="pub-card reveal">
-    <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/9739030" target="_blank">A Survey on Machine Learning Accelerators and Evolutionary Hardware Platforms</a></div>
-    <div class="pub-authors"><strong>Sathwika Bavikadi</strong>, Abhijitt Dhavlle, Amlan Ganguly, et al.</div>
-    <div class="pub-venue">IEEE Design &amp; Test, 2022</div>
-    <div class="pub-links"><a href="https://ieeexplore.ieee.org/abstract/document/9739030" class="pub-link" target="_blank">paper</a><a href="data/dt2022.bib" class="pub-link">bibtex</a></div>
-  </div>
-  <div class="pub-card reveal">
-    <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/9380930" target="_blank">LUT-based PIM Architecture with Programmable Precision-Scaling for Deep Learning</a></div>
-    <div class="pub-authors">Purab Ranjan Sutradhar, <strong>Sathwika Bavikadi</strong>, et al.</div>
-    <div class="pub-venue">IEEE Transactions on Parallel and Distributed Systems (TPDS), 2021</div>
-    <div class="pub-links"><a href="https://ieeexplore.ieee.org/abstract/document/9380930" class="pub-link" target="_blank">paper</a><a href="data/tpds2021.bib" class="pub-link">bibtex</a><a href="https://youtu.be/3MEEecp7gww" class="pub-link" target="_blank">video</a></div>
-  </div>
-  <div class="pub-card reveal">
-    <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/9146670" target="_blank">pPIM: A Programmable Processor-in-Memory Architecture with Precision-Scaling for Deep Learning</a></div>
-    <div class="pub-authors">Purab Ranjan Sutradhar, Mark Connolly, <strong>Sathwika Bavikadi</strong>, et al.</div>
-    <div class="pub-venue">IEEE Computer Architecture Letters (CAL), 2020</div>
-    <div class="pub-links"><a href="https://ieeexplore.ieee.org/abstract/document/9146670" class="pub-link" target="_blank">paper</a><a href="data/ppim2020.bib" class="pub-link">bibtex</a></div>
-  </div>
- 
-  <div class="pub-type-label">🏛 Conference Papers</div>
-  <div class="pub-card reveal">
-    <div class="pub-title"><a href="https://dl.acm.org/doi/full/10.1145/3716368.3735168" target="_blank">BrIM: A Branching In-Memory Accelerator</a></div>
-    <div class="pub-authors">Stefan Maczynski, Amlan Ganguly, Mark Indovina, Purab Sutradhar, Sai Manoj Pudukotai Dinakarrao, <strong>Sathwika Bavikadi</strong>.</div>
-    <div class="pub-venue">GLSVLSI 2025</div>
-	</div>
-	  <div class="pub-card reveal">
-    <div class="pub-title"><a href="https://dl.acm.org/doi/full/10.1145/3716368.3735285" target="_blank">3D-PLANE: A 3D-stacked DRAM-based Programmable SLM Accelerator Capable of Near-Memory and Energy-Efficient Parallel Processing</a></div>
-    <div class="pub-authors"><strong>Sathwika Bavikadi</strong>, Purab Ranjan Sutradhar, Jayanth Thangellamudi, Sai Manoj P.D.</div>
-    <div class="pub-venue">GLSVLSI 2025</div>
-  </div>
-  <div class="pub-card reveal">
-    <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/10483336" target="_blank">Processing-in-Memory Architecture with Precision-Scaling for Malware Detection</a></div>
-    <div class="pub-authors">Sreenitha Kasarapu*, <strong>Sathwika Bavikadi*</strong>, Sai Manoj P.D.</div>
-    <div class="pub-venue">VLSID 2024</div>
-  </div>
-  <div class="pub-card reveal">
-    <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/10483311" target="_blank">Reconfigurable Processing-in-Memory Architecture for Data-Intensive Applications</a></div>
-    <div class="pub-authors"><strong>Sathwika Bavikadi</strong>, Purab Ranjan Sutradhar, Amlan Ganguly, Sai Manoj P.D.</div>
-    <div class="pub-venue">VLSID 2024</div>
-
-  </div>
-  <div class="pub-card reveal">
-    <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/10129338" target="_blank">Heterogeneous Multi-Functional LUT-based PIM Architecture for Deep Learning Acceleration</a></div>
-    <div class="pub-authors"><strong>Sathwika Bavikadi</strong>, Purab Ranjan Sutradhar, Amlan Ganguly, Sai Manoj P.D.</div>
-    <div class="pub-venue">ISQED 2023</div>
-    <div class="pub-links"><a href="https://ieeexplore.ieee.org/abstract/document/10129338" class="pub-link" target="_blank">paper</a><a href="data/isqed23.bib" class="pub-link">bibtex</a></div>
-  </div>
-</section>
-	
-<!-- TEACHING -->
-<section class="news-section" id="news">
-  <div class="section-label">Courses at RIT</div>
-  <h2>Teaching</h2>
-  <div class="news-list reveal">
-	  <div class="news-item"><span class="news-date">Fall 2025</span><span class="news-text"><span class="news-badge badge-award">CMPE 550</span>Computer Architecture</span></div>
-    <div class="news-item"><span class="news-date">Spring 2025</span><span class="news-text"><span class="news-badge badge-paper">CMPE 677</span>Machine Intelligence</span></div>
+    <div class="pub-type-label">📄 Patent</div>
+    <div class="pub-card reveal">
+      <div class="pub-title"><a href="https://patents.google.com/patent/US11775312B2/en" target="_blank">Look-up table containing processor-in-memory cluster for data-intensive applications</a></div>
+      <div class="pub-authors">Amlan Ganguly, Sai Manoj P.D., Mark Connolly, Purab Ranjan Sutradhar, <strong>Sathwika Bavikadi</strong>, Mark Allen Indovina</div>
+      <div class="pub-venue">United States Patent and Trademark Office</div>
     </div>
-</section>		
-	
-<!-- AWARDS -->
-<section class="awards-section" id="awards">
-  <div class="section-label">Recognition</div>
-  <h2>Awards &amp; Honors</h2>
-  <div class="awards-grid reveal">
-    <div class="award-item"><div class="award-year">2025</div><div class="award-name">ECE Outstanding Academic Achievement Award — George Mason University</div></div>
-    <div class="award-item"><div class="award-year">2025</div><div class="award-name">Mason Innovation Award — George Mason University</div></div>
-    <div class="award-item"><div class="award-year">2025</div><div class="award-name">Grant Writers Boot Camp Award — RIT</div></div>
-    <div class="award-item"><div class="award-year">2024</div><div class="award-name">NSF iREDEFINE Fellow — ECEDHA</div></div>
-    <div class="award-item"><div class="award-year">2024</div><div class="award-name">Provost Doctoral Fellowship — George Mason University</div></div>
-    <div class="award-item"><div class="award-year">2022–24</div><div class="award-name">DAC Young Fellow Program (×3 selections)</div></div>
-    <div class="award-item"><div class="award-year">2023</div><div class="award-name">Dissertation Completion Grant — George Mason University</div></div>
-    <div class="award-item"><div class="award-year">2023</div><div class="award-name">DATE Young Fellow Program</div></div>
+ 
+    <div class="pub-type-label">📰 Journal Papers</div>
+ 
+    <div class="pub-card reveal">
+      <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/10443597" target="_blank">ReApprox-PIM: Reconfigurable Approximate LUT-Based Processing-in-Memory ML Accelerator</a></div>
+      <div class="pub-authors"><strong>Sathwika Bavikadi</strong>, Purab Ranjan Sutradhar, Mark Indovina, Amlan Ganguly, Sai Manoj P.D.</div>
+      <div class="pub-venue">IEEE Transactions on Computer-Aided Design (TCAD), 2024</div>
+    </div>
+ 
+    <div class="pub-card reveal">
+      <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/10181127" target="_blank">3DL-PIM: A LUT-Oriented Programmable PIM Architecture Based on 3D-Stacked Memory</a></div>
+      <div class="pub-authors">Purab Ranjan Sutradhar, <strong>Sathwika Bavikadi</strong>, Mark Indovina, Sai Manoj P.D., Amlan Ganguly</div>
+      <div class="pub-venue">IEEE Transactions on Emerging Topics in Computing (TETC), 2023</div>
+    </div>
+ 
+    <div class="pub-card reveal">
+      <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/9739030" target="_blank">A Survey on Machine Learning Accelerators and Evolutionary Hardware Platforms</a></div>
+      <div class="pub-authors"><strong>Sathwika Bavikadi</strong>, Abhijitt Dhavlle, Amlan Ganguly, et al.</div>
+      <div class="pub-venue">IEEE Design &amp; Test, 2022</div>
+      <div class="pub-links">
+        <a href="https://ieeexplore.ieee.org/abstract/document/9739030" class="pub-link" target="_blank">paper</a>
+        <a href="data/dt2022.bib" class="pub-link">bibtex</a>
+      </div>
+    </div>
+ 
+    <div class="pub-card reveal">
+      <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/9380930" target="_blank">LUT-based PIM Architecture with Programmable Precision-Scaling for Deep Learning</a></div>
+      <div class="pub-authors">Purab Ranjan Sutradhar, <strong>Sathwika Bavikadi</strong>, et al.</div>
+      <div class="pub-venue">IEEE Transactions on Parallel and Distributed Systems (TPDS), 2021</div>
+      <div class="pub-links">
+        <a href="https://ieeexplore.ieee.org/abstract/document/9380930" class="pub-link" target="_blank">paper</a>
+        <a href="data/tpds2021.bib" class="pub-link">bibtex</a>
+        <a href="https://youtu.be/3MEEecp7gww" class="pub-link" target="_blank">video</a>
+      </div>
+    </div>
+ 
+    <div class="pub-card reveal">
+      <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/9146670" target="_blank">pPIM: A Programmable Processor-in-Memory Architecture with Precision-Scaling for Deep Learning</a></div>
+      <div class="pub-authors">Purab Ranjan Sutradhar, Mark Connolly, <strong>Sathwika Bavikadi</strong>, et al.</div>
+      <div class="pub-venue">IEEE Computer Architecture Letters (CAL), 2020</div>
+      <div class="pub-links">
+        <a href="https://ieeexplore.ieee.org/abstract/document/9146670" class="pub-link" target="_blank">paper</a>
+        <a href="data/ppim2020.bib" class="pub-link">bibtex</a>
+      </div>
+    </div>
+ 
+    <div class="pub-type-label">🏛 Conference Papers</div>
+ 
+    <div class="pub-card reveal">
+      <div class="pub-title"><a href="https://dl.acm.org/doi/full/10.1145/3716368.3735168" target="_blank">BrIM: A Branching In-Memory Accelerator</a></div>
+      <div class="pub-authors">Stefan Maczynski, Amlan Ganguly, Mark Indovina, Purab Sutradhar, Sai Manoj Pudukotai Dinakarrao, <strong>Sathwika Bavikadi</strong></div>
+      <div class="pub-venue">GLSVLSI 2025</div>
+    </div>
+ 
+    <div class="pub-card reveal">
+      <div class="pub-title"><a href="https://dl.acm.org/doi/full/10.1145/3716368.3735285" target="_blank">3D-PLANE: A 3D-stacked DRAM-based Programmable SLM Accelerator Capable of Near-Memory and Energy-Efficient Parallel Processing</a></div>
+      <div class="pub-authors"><strong>Sathwika Bavikadi</strong>, Purab Ranjan Sutradhar, Jayanth Thangellamudi, Sai Manoj P.D.</div>
+      <div class="pub-venue">GLSVLSI 2025</div>
+    </div>
+ 
+    <div class="pub-card reveal">
+      <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/10483336" target="_blank">Processing-in-Memory Architecture with Precision-Scaling for Malware Detection</a></div>
+      <div class="pub-authors">Sreenitha Kasarapu*, <strong>Sathwika Bavikadi*</strong>, Sai Manoj P.D.</div>
+      <div class="pub-venue">VLSID 2024</div>
+    </div>
+ 
+    <div class="pub-card reveal">
+      <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/10483311" target="_blank">Reconfigurable Processing-in-Memory Architecture for Data-Intensive Applications</a></div>
+      <div class="pub-authors"><strong>Sathwika Bavikadi</strong>, Purab Ranjan Sutradhar, Amlan Ganguly, Sai Manoj P.D.</div>
+      <div class="pub-venue">VLSID 2024</div>
+    </div>
+ 
+    <div class="pub-card reveal">
+      <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/10129338" target="_blank">Heterogeneous Multi-Functional LUT-based PIM Architecture for Deep Learning Acceleration</a></div>
+      <div class="pub-authors"><strong>Sathwika Bavikadi</strong>, Purab Ranjan Sutradhar, Amlan Ganguly, Sai Manoj P.D.</div>
+      <div class="pub-venue">ISQED 2023</div>
+      <div class="pub-links">
+        <a href="https://ieeexplore.ieee.org/abstract/document/10129338" class="pub-link" target="_blank">paper</a>
+        <a href="data/isqed23.bib" class="pub-link">bibtex</a>
+      </div>
+    </div>
+ 
   </div>
 </section>
  
-<!-- SERVICE -->
-<section class="service-section" id="service">
-  <div class="section-label">Community</div>
-  <h2>Professional Service</h2>
-  <div class="service-grid reveal">
-    <div class="service-card"><h3>Session Chair</h3><ul><li>GLSVLSI 2025</li><li>MIPR 2025</li></ul></div>
-    <div class="service-card"><h3>Program Committee</h3><ul><li>DAC 2025,2026</li><li>ISQED 2025</li><li>ESWEEK 2025</li><li>GLSVLSI 2024, 2025,2026</li><li>ISVLSI 2024</li><li>IGSC 2024</li><li>IEEE iSES 2024</li></ul></div>
-    <div class="service-card"><h3>Main Reviewer</h3><ul><li>TCAD 2023, 2024</li><li>TCAS-1 2023, 2024</li><li>ICCD 2022, 2024</li><li>ISCAS 2024</li><li>GLSVLSI 2024</li><li>SUSCOM 2023</li></ul></div>
-    <div class="service-card"><h3>Leadership</h3><ul><li>iREDEFINE Mentoring Hub (Since 2024)</li><li>IEEE Young Professional Micro-Mentoring (Since 2024)</li><li>IEEE Women in Engineering (Since 2020)</li><li>Women in HPC (Since 2021)</li></ul></div>
+<!-- ═══ TEACHING ══════════════════════════════════════════ -->
+<section id="teaching">
+  <div class="page-wrap">
+    <div class="section-tag">Courses at RIT</div>
+    <h2>Teaching</h2>
+    <div class="course-list reveal">
+      <div class="course-item">
+        <span class="course-sem">Fall 2025</span>
+        <span class="course-code">CMPE 550</span>
+        <span class="course-name">Computer Architecture</span>
+      </div>
+      <div class="course-item">
+        <span class="course-sem">Spring 2025</span>
+        <span class="course-code">CMPE 677</span>
+        <span class="course-name">Machine Intelligence</span>
+      </div>
+    </div>
+  </div>
+</section>
+ 	
+	
+<!-- ═══ AWARDS ════════════════════════════════════════════ -->
+<section id="awards">
+  <div class="page-wrap">
+    <div class="section-tag">Recognition</div>
+    <h2>Awards &amp; Honors</h2>
+    <div class="awards-grid reveal">
+		<div class="aw"><div class="aw-year">2025</div><div class="aw-name">ECE Outstanding Academic Achievement Award — George Mason University</div></div>
+      <div class="aw"><div class="aw-year">2025</div><div class="aw-name">ECE Outstanding Academic Achievement Award — George Mason University</div></div>
+      <div class="aw"><div class="aw-year">2025</div><div class="aw-name">Mason Innovation Award — George Mason University</div></div>
+      <div class="aw"><div class="aw-year">2025</div><div class="aw-name">Grant Writers Boot Camp Award — RIT</div></div>
+      <div class="aw"><div class="aw-year">2024</div><div class="aw-name">NSF iREDEFINE Fellow — ECEDHA</div></div>
+      <div class="aw"><div class="aw-year">2024</div><div class="aw-name">Provost Doctoral Fellowship — George Mason University</div></div>
+      <div class="aw"><div class="aw-year">2022–24</div><div class="aw-name">DAC Young Fellow Program (×3 selections)</div></div>
+      <div class="aw"><div class="aw-year">2023</div><div class="aw-name">Dissertation Completion Grant — George Mason University</div></div>
+      <div class="aw"><div class="aw-year">2023</div><div class="aw-name">DATE Young Fellow Program</div></div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ═══ SERVICE ═══════════════════════════════════════════ -->
+<section id="service">
+  <div class="page-wrap">
+    <div class="section-tag">Community</div>
+    <h2>Professional Service</h2>
+    <div class="service-grid reveal">
+      <div class="sc">
+        <h3>Session Chair</h3>
+        <ul><li>GLSVLSI 2025</li><li>MIPR 2025</li></ul>
+      </div>
+      <div class="sc">
+        <h3>Program Committee</h3>
+        <ul>
+          <li>DAC 2025, 2026</li>
+          <li>ISQED 2025</li>
+          <li>ESWEEK 2025</li>
+          <li>GLSVLSI 2024, 2025, 2026</li>
+          <li>ISVLSI 2024</li>
+          <li>IGSC 2024</li>
+          <li>IEEE iSES 2024</li>
+        </ul>
+      </div>
+      <div class="sc">
+        <h3>Main Reviewer</h3>
+        <ul>
+          <li>TCAD 2023, 2024</li>
+          <li>TCAS-1 2023, 2024</li>
+          <li>ICCD 2022, 2024</li>
+          <li>ISCAS 2024</li>
+          <li>GLSVLSI 2024</li>
+          <li>SUSCOM 2023</li>
+        </ul>
+      </div>
+      <div class="sc">
+        <h3>Leadership</h3>
+        <ul>
+          <li>iREDEFINE Mentoring Hub (Since 2024)</li>
+          <li>IEEE Young Professional Micro-Mentoring (Since 2024)</li>
+          <li>IEEE Women in Engineering (Since 2020)</li>
+          <li>Women in HPC (Since 2021)</li>
+        </ul>
+      </div>
+    </div>
   </div>
 </section>
 	
@@ -926,7 +1133,7 @@ accelerators.
   </table>
 -->
 
-				
+<!--				
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
 	       <tr>
 		<td>
@@ -935,22 +1142,22 @@ accelerators.
 		<p align="center">
         	<quote>"Learning is paramount and everything else comes later." </quote>
                 <!--Design and <a href="https://github.com/jonbarron/jonbarron_website">source code</a> inspiration.-->
-              </p>
+<!--              </p>
         </td>
       </tr>
       </table>
 
 <footer style="text-align: center; margin-top: 10px; padding: 0px;">
-    <p>&copy; <span id="year"></span> Sathwika Bavikadi</p>
-    <!--<p>Last updated: <span id="lastUpdated"></span></p>-->
+    <p>&copy; <span id="year"></span> Sathwika Bavikadi</p> -->
+    <!--<p>Last updated: <span id="lastUpdated"></span></p>--> <!--
   </footer>
   <script> // fro time stamp
     // Set current year
     document.getElementById("year").textContent = new Date().getFullYear();
 
-    // Set last updated timestamp
+    // Set last updated timestamp -->
    <!-- const lastUpdated = document.lastModified; -->
-   <!-- document.getElementById("lastUpdated").textContent = lastUpdated; -->
+   <!-- document.getElementById("lastUpdated").textContent = lastUpdated; --> <!--
 	   
   const lastModified = new Date(document.lastModified);
     const options = { year: 'numeric', month: 'long' }; // E.g., "October 2024"
@@ -963,4 +1170,50 @@ accelerators.
     </tr>
 </table>
   </body>
+</html> -->
+
+
+<!-- ═══ FOOTER ════════════════════════════════════════════ -->
+<footer>
+  <p class="quote">"Learning is paramount and everything else comes later."</p>
+  <p class="copy">© <span id="year"></span> Sathwika Bavikadi · Rochester Institute of Technology</p>
+</footer>
+ 
+<!-- visitor map (hidden, preserved) -->
+<div style="display:none;">
+  <a href="https://clustrmaps.com/site/1c08z" title="Visit tracker">
+    <img src="//www.clustrmaps.com/map_v2.png?d=uLZkocQGAXEuQoOe5nWpVaKxEniVsgM9yKRBBoQgTzo&cl=ffffff"/>
+  </a>
+</div>
+ 
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+ 
+  // Scroll reveal with child stagger
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      e.target.classList.add('in');
+      const kids = e.target.querySelectorAll('.rc, .news-item, .pub-card, .sc, .aw, .course-item');
+      kids.forEach((k, i) => {
+        k.style.opacity = '0';
+        k.style.transform = 'translateY(12px)';
+        k.style.transition = `opacity .4s ${i * 50}ms ease, transform .4s ${i * 50}ms ease`;
+        requestAnimationFrame(() => { k.style.opacity = '1'; k.style.transform = 'none'; });
+      });
+      io.unobserve(e.target);
+    });
+  }, { threshold: 0.07 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+ 
+  // Active nav highlight
+  const sections = document.querySelectorAll('section[id], div[id]');
+  const links    = document.querySelectorAll('.topnav a');
+  window.addEventListener('scroll', () => {
+    let cur = '';
+    sections.forEach(s => { if (window.scrollY >= s.offsetTop - 80) cur = s.id; });
+    links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + cur));
+  });
+</script>
+</body>
 </html>
