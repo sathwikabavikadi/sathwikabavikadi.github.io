@@ -183,7 +183,7 @@ body {
 
     /* ── RESET ── */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
+    html { scroll-behavior: smooth; font-size: 18px; }
     body { font-family: 'Outfit', sans-serif; background: var(--cream); color: var(--text); line-height: 1.7; overflow-x: hidden; }
     a { color: var(--teal); text-decoration: none; transition: color .2s; }
     a:hover { color: var(--teal-light); }
@@ -279,15 +279,23 @@ body {
     /* photo col */
     .hero-photo-col { text-align: center; flex-shrink: 0; }
     .hero-photo-col img {
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto 1.2rem;
+}
+	/*.hero-photo-col img {
       width: 300px; height: 300px; border-radius: 50%; object-fit: cover;
 	  object-position: center top;
       display: block; margin: 0 auto 1.2rem;
       filter: none;
       -webkit-filter: none;
-      /*border: 3px solid rgba(255,255,255,.18);
+      border: 3px solid rgba(255,255,255,.18);
       outline: 8px solid rgba(15,123,108,.2);
-      display: block; margin: 0 auto 1.2rem;*/
-    }
+      display: block; margin: 0 auto 1.2rem;
+    }*/
     .social-icons { display: flex; gap: .7rem; justify-content: center; flex-wrap: wrap; }
     .social-icons a {
       width: 36px; height: 36px; border-radius: 50%;
@@ -522,7 +530,8 @@ body {
  
     <!-- Right: photo + icons -->
     <div class="hero-photo-col">
-      <img src="images/Sathwika Bavikadi-HS.jpg" alt="Sathwika Bavikadi">
+      <!--<img src="images/Sathwika Bavikadi-HS.jpg" alt="Sathwika Bavikadi"> -->
+	  <img src="images/Sathwika Bavikadi-HS.jpg" alt="Sathwika Bavikadi" style="width:100%;max-width:260px;height:auto;border-radius:8px;">
       <div class="social-icons">
         <a href="https://www.linkedin.com/in/sathwika-bavikadi" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
         <a href="https://scholar.google.com/citations?user=EjyNQ4wAAAAJ&hl=en" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar-square"></i></a>
@@ -608,8 +617,9 @@ Before joining GMU, I worked as a PD Baseband Developer at Ericsson, Lund, Swede
   <div class="page-wrap">
     <div class="section-tag">Focus Areas</div>
     <h2>Research Interests</h2>
-    <!--<p style="max-width:640px;color:var(--muted);margin-bottom:1.8rem;font-size:.95rem;line-height:1.78;">-->
-	<p style="color:var(--muted);margin-bottom:1.8rem;font-size:.95rem;line-height:1.78;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">
+    <!--<p style="max-width:640px;color:var(--muted);margin-bottom:1.8rem;font-size:.95rem;line-height:1.78;">
+	  	<p style="color:var(--muted);margin-bottom:1.8rem;font-size:.95rem;line-height:1.78;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">-->
+	  <p style="color:var(--muted);margin-bottom:1.8rem;font-size:1.05rem;line-height:1.78;">
       By addressing key challenges in memory management, performance optimization, energy efficiency, and system usability, my work makes intelligent computing more accessible across a wide range of real-world scenarios.
     </p>
     <div class="research-grid reveal">
@@ -621,9 +631,9 @@ Before joining GMU, I worked as a PD Baseband Developer at Ericsson, Lund, Swede
       </div>
       <div class="rc">
         <div class="rc-icon">⚡</div>
-        <h3>Efficient LLMs &amp; GNNs on Device</h3>
-        <p>Hardware-efficient ML methods. Sparse, quantization, and finetuning for edge hardware and heterogeneous SoCs.</p>
-        <div class="rc-tags"><span class="tag">Quantization</span><span class="tag">Edge AI</span></div>
+        <h3>Efficient AI on Device</h3>
+        <p>Hardware-efficient ML methods. Sparse, quantization, KV cache management for edge hardware and heterogeneous SoCs.</p>
+        <div class="rc-tags"><span class="tag">Quantization</span><span class="tag">Edge AI</span><span class="tag">LLM</span></div>
       </div>
       <div class="rc">
         <div class="rc-icon">🔧</div>
